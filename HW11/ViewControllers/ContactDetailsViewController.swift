@@ -9,7 +9,7 @@ import UIKit
 
 class ContactDetailsViewController: UIViewController {
 
-    var contact: Temp!
+    var contact: Person!
 
     @IBOutlet var contactPhone: UILabel!
     @IBOutlet var contactEmail: UILabel!
@@ -20,16 +20,5 @@ class ContactDetailsViewController: UIViewController {
         contactEmail.text = "Email: \(contact.email)"
         navigationItem.title = contact.fullName
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

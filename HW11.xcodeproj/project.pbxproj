@@ -62,6 +62,7 @@
 		6EB5EE152900026400D46894 /* HW11 */ = {
 			isa = PBXGroup;
 			children = (
+				6EB5EE382900787400D46894 /* Services */,
 				6EB5EE3129000B8600D46894 /* Model */,
 				6EB5EE2C290002AF00D46894 /* App */,
 				6EB5EE2B2900029F00D46894 /* ViewControllers */,
@@ -103,9 +104,16 @@
 			isa = PBXGroup;
 			children = (
 				6EB5EE2F29000B7C00D46894 /* Person.swift */,
-				6EB5EE3229000E4900D46894 /* DataManager.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		6EB5EE382900787400D46894 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6EB5EE3229000E4900D46894 /* DataManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -58,3 +58,4 @@ class DataManager {
     "borsch@cook.eu"
     ].shuffled()
 }
+

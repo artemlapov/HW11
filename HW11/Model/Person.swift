@@ -5,18 +5,10 @@
 //  Created by Artem Lapov on 19.10.2022.
 //
 
+let data = DataManager()
+
 struct Person {
-    let name: String
-    let surname: String
-    let phoneNumber: Int
-    let email: String
 
-    var fullName: String {
-        "\(surname) \(name)"
-    }
-}
-
-struct Temp {
     let name: String
     let surname: String
     let phoneNumber: Int
@@ -26,11 +18,20 @@ struct Temp {
         "\(surname) \(name)"
     }
 
-    static func getTempList() -> [Temp] {
-        [
-            Temp(name: "Igor", surname: "Stravinsky", phoneNumber: 0101010, email: "email@email.com"),
-            Temp(name: "String", surname: "SurString", phoneNumber: 020202, email: "Alla@mail.ru"),
-            Temp(name: "Tim", surname: "Cook", phoneNumber: 0404040, email: "timcook@gmail.com")
-        ]
-    }
+    static func getPersonsList() -> [Person] {
+        var contacts = [Person]()
+        for iteration in 0...9 {
+            contacts.append(Person(
+                name: data.names[iteration],
+                surname: data.surnames[iteration],
+                phoneNumber: data.phoneNumbers[iteration],
+                email: data.emails[iteration]
+            )
+                            )
+        }
+        return contacts
+   }
 }
+
+
+
